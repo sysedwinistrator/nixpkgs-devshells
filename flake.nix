@@ -35,9 +35,9 @@
       gcc = pkgs: {stdenv = pkgs.gccStdenv;};
     };
 
-    # Apply a devShellFunc (pkgs: pkg: <devShell>)
-    # that generates a devShell for package pkg in package set pkgs
-    # to every package in pkgs
+    # Apply a devShellFunc (pkgs: pkg: <devShell>),
+    # that generates a devShell for package pkg in package set pkgs,
+    # to every package in pkgs.
     # In other words, convert set of packages to a set of devShells
     mkDevShellsForPkgs = {
       pkgs,
